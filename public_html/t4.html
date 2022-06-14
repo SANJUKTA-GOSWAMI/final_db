@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/script.js"></script>
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script >checkLogin();
+        getUser();</script>
+    <title>Feedback</title>
+</head>
+  <body>
+    <div
+    class="navbar navbar-expand-md navbar-dark bg-dark mb-4 bg-nav align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    role="navigation"
+  >
+    <p class="navbar-brand">Feedback System</p>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto"></ul>
+      <nav class="form-inline mt-2 mt-md-0">
+        <a class="btn btn-outline-primary" onclick="deleteSession()"
+          >LogOut</a
+        >
+      </nav>
+    </div>
+  </div>
+      <div class="container">
+        <div class=" text-center mt-5 ">
+            <h5 >Teacher-4</h5>
+        </div>
+        <form id="feedback_data" method="post">
+          <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-1. The faculty explain the objective of the course,its relevance in regard to industrial application current developments and research opportunities.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques1" placeholder="Enter Between 1 to 10 to rate." name="ques1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div><br>
+
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-2. The pre requisits partinents of the course with others and the program as awhole and the organisation of the subject matter are explained.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques2" placeholder="Enter Between 1 to 10 to rate." name="ques2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div> <br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                Q-3. The teacher explain CO statements and its   co relations with the PO's and PSO' s.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques3" placeholder="Enter Between 1 to 10 to rate." name="ques3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                Q-4.  The teacher is enthusiastic and created interest in the subject.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques4" placeholder="Enter Between 1 to 10 to rate." name="ques4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                Q-5.  The teacher delivered the lecture lucidely.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques5" placeholder="Enter Between 1 to 10 to rate." name="ques5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                Q-6.  The teacher emphasise the numerical problem solving,mathematical formulations,examples and data analysis.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques6" placeholder="Enter Between 1 to 10 to rate." name="ques6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-7. The teacher used modern and smart teaching aids whenever relevant.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques7" placeholder="Enter Between 1 to 10 to rate." name="ques7" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div><br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-8. Test assignements and quizes were adequate.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques8" placeholder="Enter Between 1 to 10 to rate." name="ques8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div><br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-9. The teacher provided opportunities for participatory learning.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques9" placeholder="Enter Between 1 to 10 to rate." name="ques9" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div><br>
+            <div class="card border-secondary mb-3">
+              <div class="card-header text-primary">
+                 Q-10. Your level of satisfaction with the contribution of teacher.
+              </div>
+              <div class="card-body">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="ques10" placeholder="Enter Between 1 to 10 to rate." name="ques10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                  </div>
+              </div>
+            </div><br>
+            <input type="button" class="btn btn-primary btn-block mb-4" id="empSave" value="Save Details" onclick="saveEmployee4();">
+        </form>
+  </div><br><br>
+  <footer class="bg-light text-center text-lg-start" style="background-color: #45637d;">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="#">Techhunter</a>
+    </div>
+  <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
