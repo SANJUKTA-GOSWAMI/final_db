@@ -26,11 +26,21 @@ function proceed(){
     var url = "t1.html"
     window.location = url;
 }
-
+// Function for genarating random values.
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
 function updateUser() {
     var jsonStr={
-        uMobile:"Stat45",
-        uPass:"Xyz987"
+        uMobile: makeid(5),
+        uPass: makeid(5)
     };
    jsonStr=JSON.stringify(jsonStr);
     var rec_no = localStorage.getItem("rec_no");
