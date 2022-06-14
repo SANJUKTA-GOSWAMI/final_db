@@ -52,7 +52,7 @@ function logIn() {
         window.location.replace("dashboard.html");
         return;
     } else if (resultObj.status === 400) {
-         $("#pstatus").text("Invalid email or password!!!");
+         $("#pstatus").text("Invalid mobile or university roll number or either you allready submitted this form!!");
         $("#dstatus").css('visibility', 'visible');
         return;
     } else {
