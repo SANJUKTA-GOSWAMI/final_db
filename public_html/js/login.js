@@ -53,7 +53,7 @@ function logIn() {
         window.location.replace("dashboard.html");
         return;
     } else if (resultObj.status === 400) {
-         $("#pstatus").text("Either you entered the wrong credentials or you allready submitted this form!!");
+         $("#pstatus").text("Invalid mobile or university roll number or either you allready submitted this form!!");
         $("#dstatus").css('visibility', 'visible');
         return;
     } else {
