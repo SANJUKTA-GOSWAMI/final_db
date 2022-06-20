@@ -1,3 +1,4 @@
+var token = "90939080|-31949290355573903|90940934"
 //This Function is created to validate form data
 $("#ques1").focus();
 function validateAndGetFormData() {
@@ -123,10 +124,10 @@ function saveEmployee() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t1");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t1");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();
@@ -138,10 +139,10 @@ function saveEmployee2() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t2");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t2");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();
@@ -153,10 +154,10 @@ function saveEmployee3() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t3");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t3");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();
@@ -168,10 +169,10 @@ function saveEmployee4() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t4");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t4");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();
@@ -183,10 +184,10 @@ function saveEmployee5() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t5");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t5");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();
@@ -199,10 +200,10 @@ function saveEmployee6() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937",jsonStr, "feedbackdb", "t6");
+    var putReqStr = createPUTRequest(token,jsonStr, "feedbackdb", "t6");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
-    var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
+    var resultObj = executeCommand(putReqStr,"//api.login2explore.com:5577", "/api/iml");
     // alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({ async: true });
     resetForm();

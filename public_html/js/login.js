@@ -1,5 +1,6 @@
+var token ="90939080|-31949290355573903|90940934"
 function checkLogin() {
-    var isLogin = isJpdbSessionTokenExists("90939080|-31949290535706575|90940937", "Employee", "user");
+    var isLogin = isJpdbSessionTokenExists(token, "Employee", "user");
     if (isLogin === 200) {
         window.location.replace("dashboard.html");
     } else {
@@ -32,7 +33,7 @@ function logIn() {
     if (jsonStr === "") {
         return;
     }
-    var getReqStr = createGET_BY_KEYRequest("90939080|-31949290535706575|90940937"
+    var getReqStr = createGET_BY_KEYRequest(token
             , "Student", "user", jsonStr);
 //            alert(getReqStr);
     jQuery.ajaxSetup({async: false});
@@ -43,7 +44,7 @@ function logIn() {
     if (resultObj.status === 200) {
         var mno = $("#mno").val();
         jQuery.ajaxSetup({async: false});
-        var x = createJpdbSessionToken("90939080|-31949290535706575|90940937", 1, "Student", "user", mno);
+        var x = createJpdbSessionToken(token, 1, "Student", "user", mno);
         jQuery.ajaxSetup({async: true});
         var temp = JSON.parse(resultObj.data);
         var rec_no = temp.rec_no;

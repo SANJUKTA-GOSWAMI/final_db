@@ -1,5 +1,6 @@
+var token ="90939080|-31949290355573903|90940934"
 function checkLogin() {
-    var isLogin = isJpdbSessionTokenExists("90939080|-31949290535706575|90940937", "Student", "user");
+    var isLogin = isJpdbSessionTokenExists(token, "Student", "user");
     if (isLogin === 200) {
         window.location.replace("dashboard.html");
     } else {
@@ -14,6 +15,7 @@ function validateAndGetFormData() {
         $("#uname").focus();
         return "";
     }
+
     var uMobileVar = $("#umobile").val();
     if (uMobileVar === "") {
         $("#pstatus").text("Mobile is Required Value");
@@ -48,14 +50,14 @@ function saveUser() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest("90939080|-31949290535706575|90940937", jsonStr, "Student", "user");
-    // alert(putReqStr);
+    var putReqStr = createPUTRequest(token, jsonStr, "Student", "user");
+    alert(putReqStr);
     jQuery.ajaxSetup({async: false});
     var resultObj = executeCommandAtGivenBaseUrl(putReqStr, "http://api.login2explore.com:5577", "/api/iml");
-    // alert(JSON.stringify(resultObj));
+    alert(JSON.stringify(resultObj));
     jQuery.ajaxSetup({async: true});
    $("#pstatus").text("Register Successfully!!");
         $("#dstatus").css('visibility', 'visible');
-    window.location.replace("login.html");
+    window.location.replace("index.html");
     return;
 }

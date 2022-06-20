@@ -1,11 +1,12 @@
+var token ="90939080|-31949290355573903|90940934"
 function deleteSession() {
     var se = getJpdbSessionToken();
     jQuery.ajaxSetup({async: false});
-    var x = removeSessionTokenFromJPDB("90939080|-31949290535706575|90940937", se, "Student", "user");
+    var x = removeSessionTokenFromJPDB(token, se, "Student", "user");
     jQuery.ajaxSetup({async: true});
     if (x === 200) {
         localStorage.removeItem("rec_no");
-        window.location.replace("login.html");
+        window.location.replace("index.html");
     } else {
         alert("error");
         return;
@@ -13,13 +14,13 @@ function deleteSession() {
 }
 function checkLogin() {
     jQuery.ajaxSetup({async: false});
-    var isLogin = isJpdbSessionTokenExists("90939080|-31949290535706575|90940937", "Student", "user");
+    var isLogin = isJpdbSessionTokenExists(token, "Student", "user");
     jQuery.ajaxSetup({async: true});
 
     if (isLogin === 200) {
         return;
     } else {
-        window.location.replace("login.html");
+        window.location.replace("index.html");
     }
 }
 function proceed(){
@@ -44,7 +45,7 @@ function updateUser() {
     };
    jsonStr=JSON.stringify(jsonStr);
     var rec_no = localStorage.getItem("rec_no");
-    var putReqStr = createUPDATERecordRequest("90939080|-31949290535706575|90940937",
+    var putReqStr = createUPDATERecordRequest(token,
             jsonStr, "Student", "user", rec_no);
             //    alert(putReqStr);
     jQuery.ajaxSetup({async: false});

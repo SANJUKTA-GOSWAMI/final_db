@@ -35,7 +35,7 @@
             <p>Design Analysis and Algorithm<br>PCC-DS-403</p>
         </div>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Imporatnt!</strong> 0 will be considered as 1 and more than 10 will be considered as 10.
+          <strong>Imporatnt!</strong> Enter between 1 and 10 only to rate.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -47,7 +47,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques1" placeholder="Enter Between 1 to 10 to rate." name="ques1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques1" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div><br>
@@ -58,7 +59,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques2" placeholder="Enter Between 1 to 10 to rate." name="ques2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques2" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div> <br>
@@ -68,7 +70,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques3" placeholder="Enter Between 1 to 10 to rate." name="ques3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques3" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div>
@@ -79,7 +82,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques4" placeholder="Enter Between 1 to 10 to rate." name="ques4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques4" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div>
@@ -90,7 +94,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques5" placeholder="Enter Between 1 to 10 to rate." name="ques5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques5" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div>
@@ -101,7 +106,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques6" placeholder="Enter Between 1 to 10 to rate." name="ques6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques6" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div>
@@ -112,7 +118,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques7" placeholder="Enter Between 1 to 10 to rate." name="ques7" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques7" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div><br>
@@ -122,7 +129,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques8" placeholder="Enter Between 1 to 10 to rate." name="ques8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques8" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div><br>
@@ -132,7 +140,8 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques9" placeholder="Enter Between 1 to 10 to rate." name="ques9" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques9" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div><br>
@@ -142,14 +151,15 @@
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="ques10" placeholder="Enter Between 1 to 10 to rate." name="ques10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                      <input type="number" min="1" max="10" id="ques10" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
                     </div>
                 </div>
               </div><br>
               <input type="button" class="btn btn-primary btn-block mb-4" id="empSave" value="Save Details" onclick="saveEmployee();">
           </form>
   </div><br><br>
-  <footer class="bg-light text-center text-lg-start" style="background-color: #45637d;">
+  <footer class="bg-light text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
       <a class="text-dark" href="#">Techhunter</a>
