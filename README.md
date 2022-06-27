@@ -6,5 +6,5 @@ I use bootstrap for designing the front end and making This site responsive.
 
 ## Authors
 
-- [@techhunter02](https://www.github.com/techhunter02)
+- [@techhunter2](https://www.github.com/techhunter2)
 
