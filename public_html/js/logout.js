@@ -1,8 +1,8 @@
-var token ="90939365|-31949287703999334|90941191"
+var token ="90939081|-31949265854480930|90953441"
 function deleteSession() {
     var se = getJpdbSessionToken();
     jQuery.ajaxSetup({async: false});
-    var x = removeSessionTokenFromJPDB(token, se, "Student", "user");
+    var x = removeSessionTokenFromJPDB(token, se, "Student2k22", "user");
     jQuery.ajaxSetup({async: true});
     if (x === 200) {
         localStorage.removeItem("rec_no");
@@ -14,7 +14,7 @@ function deleteSession() {
 }
 function checkLogin() {
     jQuery.ajaxSetup({async: false});
-    var isLogin = isJpdbSessionTokenExists(token, "Student", "user");
+    var isLogin = isJpdbSessionTokenExists(token, "Student2k22", "user");
     jQuery.ajaxSetup({async: true});
 
     if (isLogin === 200) {
@@ -46,7 +46,7 @@ function updateUser() {
    jsonStr=JSON.stringify(jsonStr);
     var rec_no = localStorage.getItem("rec_no");
     var putReqStr = createUPDATERecordRequest(token,
-            jsonStr, "Student", "user", rec_no);
+            jsonStr, "Student2k22", "user", rec_no);
             //    alert(putReqStr);
     jQuery.ajaxSetup({async: false});
     var resultObj = executeCommandAtGivenBaseUrl(putReqStr,

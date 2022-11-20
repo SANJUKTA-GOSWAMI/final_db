@@ -1,6 +1,6 @@
-var token ="90939365|-31949287703999334|90941191"
+var token ="90939081|-31949265854480930|90953441"
 function checkLogin() {
-    var isLogin = isJpdbSessionTokenExists(token, "Student", "user");
+    var isLogin = isJpdbSessionTokenExists(token, "Student2k22", "user");
     if (isLogin === 200) {
         window.location.replace("dashboard.html");
     } else {
@@ -50,7 +50,7 @@ function saveUser() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token, jsonStr, "Student", "user");
+    var putReqStr = createPUTRequest(token, jsonStr, "Student2k22", "user");
     alert(putReqStr);
     jQuery.ajaxSetup({async: false});
     var resultObj = executeCommandAtGivenBaseUrl(putReqStr, "http://api.login2explore.com:5577", "/api/iml");
